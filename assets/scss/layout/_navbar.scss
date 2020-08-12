@@ -1,4 +1,7 @@
 .container{
-    border: 1px dashed black;
     padding: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:$link-color;
 }
