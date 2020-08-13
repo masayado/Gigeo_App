@@ -9957,8 +9957,8 @@ body {
   margin-left: 25px;
 }
 .header__name {
-  font-weight: bolder;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 17px;
 }
 .header__followers {
   font-weight: lighter;
@@ -9979,21 +9979,46 @@ body {
   padding: 10px;
 }
 
+.navbar {
+  padding: 0.5rem 2rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #000000;
 }
 
 .container__span--1 {
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
 .container__span--2 {
   font-size: 8px;
-  font-weight: 700;
+  font-weight: 600;
   position: absolute;
-  top: 18px;
+  top: 26px;
+}
+
+.main {
+  justify-content: center;
+}
+.main__gallery {
+  font-size: 25px;
+}
+.main__dp {
+  height: 200px;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.main__title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main__description {
+  color: #4C4C4C;
 }
 
 /*# sourceMappingURL=style.css.map */
