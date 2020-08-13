@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio GigeoApp</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 </head>
 <body>
 
 
 <div class="container-fluid">
+<!--Contenedor principal-->
 
 <!--Navbar-->
 
     <nav class="navbar navbar-expand-md navbar-light bg-white text dark">
         <div class="container">
-        <a class="navbar-brand mb-0 h1" href="#">GIGEO <sup class="sup">ART</sup></a>
+        <div class="container__logo">
+            <span class="container__span--1">GIGEO</span> <span class="container__span--2">ART</span>
+        </div>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon border-0"></span>
         </button>
@@ -27,25 +31,36 @@
             <li><a class="nav-link" href="#"><i class="fas fa-plus"></i></a></li>
             <li><a class="nav-link" href="#"><i class="far fa-bell"></i></a></li>
             <li><a class="nav-link" href="#"><i class="fas fa-bars"></i></a></li>
-            
             </ul>
             </div>
         </div> 
     </nav>
- <!--Header img-->
+ <!--Header y Profile-->
 
-      <header id="header" class="hero-section">
+      <header class="container-fluid header">
+        <section class="row">
+            <div class="col-md-12 header__banner"></div>
+        </section>
+
+        <section class="row">
+            <div class="col-md-12 header__profile">
+                <div class="header__info">
+                    <div class="header__avatar"></div>
+                    <div class="header__details">
+                        <div class="header__name">Yuki Mukami</div>
+                        <div class="header__followers">30.000 seguidores</div>
+                    </div>
+                </div>
+                <div class="header__buttons">
+                    <button class="button button--blue"> Mensaje</button>
+                    <button class="button button--red">Seguir</button>
+                </div>
+            </div>
+        </section>
       </header>
 
-<!--Profile-->
-    <div class="profile">
-    <div class="profile row">
-        <div class="col-12 col-md-8">
-            <h1>Yuki Mukami</h1>
-            <p>30.000 Seguidores</p>
-        </div>
-        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-    </div>
+
+<!--Fin Contenedor principal-->
     </div>
 
 <!--Videos-->

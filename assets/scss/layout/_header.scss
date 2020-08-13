@@ -1,7 +1,66 @@
-.hero-section {
-    background-image: url(/assets/images/image-banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 6.25rem 3.125rem;
+.header{
+
+    &__banner{
+        background-image: url('../images/image-banner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 6.25rem 3.125rem;
+    }
+
+    &__profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80px;
+        padding:0 100px;
+        border-bottom: 1px solid;
+        border-color: $border-color;
+    }
+
+    &__info{
+        display: flex;
+        flex-grow:5;
+    }
+
+    &__avatar{
+        background-image: url('../images/profile-image.png');
+        background-size: cover;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        position: relative;
+        top:12px;
+    }
+
+    &__details{
+        display:flex;
+        flex-direction:column;
+        height: 80px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left:25px;
+    }
+
+    &__name{
+        font-weight: bolder;
+        font-size: $font-size-profile;
+    }
+
+    &__followers{
+        font-weight: lighter;
+        font-size: $font-size-medium;
+    }
+
+    &__buttons{
+        display:none;
+    /* Meterle mixin acá */
+    @media (min-width: 576px) {
+        display:flex;
+        justify-content:flex-end;
+     }
+    }
+
+
+
 }

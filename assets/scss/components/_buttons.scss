@@ -1,0 +1,16 @@
+.button{
+    border:0;
+    color:$bg-color;
+    font-size:$font-size-medium;
+    margin-left:10px;
+    height: 30px;
+    width: 70px;
+
+    &--blue{
+        background-color:$button-color-blue;
+    }
+
+    &--red{
+        background-color:$button-color-red;
+    }
+}

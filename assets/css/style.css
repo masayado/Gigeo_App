@@ -1652,14 +1652,14 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #DCE0D8;
 }
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 2px solid #DCE0D8;
 }
 .table tbody + tbody {
-  border-top: 2px solid #dee2e6;
+  border-top: 2px solid #DCE0D8;
 }
 
 .table-sm th,
@@ -1668,11 +1668,11 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid #dee2e6;
+  border: 1px solid #DCE0D8;
 }
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid #dee2e6;
+  border: 1px solid #DCE0D8;
 }
 .table-bordered thead th,
 .table-bordered thead td {
@@ -1877,7 +1877,7 @@ pre code {
 .table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
-  border-color: #dee2e6;
+  border-color: #DCE0D8;
 }
 
 .table-dark {
@@ -5427,7 +5427,7 @@ a.close.disabled {
   align-items: flex-start;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #DCE0D8;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5453,7 +5453,7 @@ a.close.disabled {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #DCE0D8;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -6088,23 +6088,23 @@ button.bg-dark:focus {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #DCE0D8 !important;
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #DCE0D8 !important;
 }
 
 .border-right {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #DCE0D8 !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #DCE0D8 !important;
 }
 
 .border-left {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #DCE0D8 !important;
 }
 
 .border-0 {
@@ -9885,18 +9885,17 @@ h3 {
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-    border-color: #dee2e6;
+    border-color: #DCE0D8;
   }
 
   .table .thead-dark th {
     color: inherit;
-    border-color: #dee2e6;
+    border-color: #DCE0D8;
   }
 }
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+  line-height: normal !important;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -9905,16 +9904,75 @@ body {
   box-sizing: border-box;
 }
 
-.hero-section {
-  background-image: url(/assets/images/image-banner.png);
+.button {
+  border: 0;
+  color: #FFFFFF;
+  font-size: 11px;
+  margin-left: 10px;
+  height: 30px;
+  width: 70px;
+}
+.button--blue {
+  background-color: #96D6E2;
+}
+.button--red {
+  background-color: #EE6560;
+}
+
+.header__banner {
+  background-image: url("../images/image-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 6.25rem 3.125rem;
 }
-
-.main__preview {
-  height: 200px;
+.header__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  padding: 0 100px;
+  border-bottom: 1px solid;
+  border-color: #DCE0D8;
+}
+.header__info {
+  display: flex;
+  flex-grow: 5;
+}
+.header__avatar {
+  background-image: url("../images/profile-image.png");
+  background-size: cover;
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  position: relative;
+  top: 12px;
+}
+.header__details {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 25px;
+}
+.header__name {
+  font-weight: bolder;
+  font-size: 16px;
+}
+.header__followers {
+  font-weight: lighter;
+  font-size: 11px;
+}
+.header__buttons {
+  display: none;
+  /* Meterle mixin acá */
+}
+@media (min-width: 576px) {
+  .header__buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .container {
@@ -9923,6 +9981,19 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
   color: #000000;
+}
+
+.container__span--1 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.container__span--2 {
+  font-size: 8px;
+  font-weight: 700;
+  position: absolute;
+  top: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
