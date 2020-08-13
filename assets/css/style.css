@@ -10001,24 +10001,7 @@ body {
 }
 
 .main {
-  justify-content: center;
-}
-.main__gallery {
-  font-size: 25px;
-}
-.main__dp {
-  height: 200px;
-  background-size: cover;
-  width: 100%;
-  margin-bottom: 10px;
-}
-.main__title {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.main__description {
-  color: #4C4C4C;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
