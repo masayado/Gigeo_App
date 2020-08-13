@@ -9895,7 +9895,7 @@ h3 {
 }
 body {
   font-family: "Montserrat", sans-serif !important;
-  line-height: normal !important;
+  box-sizing: border-box;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -9935,6 +9935,11 @@ body {
   border-bottom: 1px solid;
   border-color: #DCE0D8;
 }
+@media (max-width: 576px) {
+  .header__profile {
+    border-bottom: 0;
+  }
+}
 .header__info {
   display: flex;
   flex-grow: 5;
@@ -9966,17 +9971,12 @@ body {
 }
 .header__buttons {
   display: none;
-  /* Meterle mixin acá */
 }
 @media (min-width: 576px) {
   .header__buttons {
     display: flex;
     justify-content: flex-end;
   }
-}
-
-.container {
-  padding: 10px;
 }
 
 .navbar {
@@ -9997,11 +9997,47 @@ body {
   font-size: 8px;
   font-weight: 600;
   position: absolute;
-  top: 26px;
+  top: 15px;
 }
 
-.main {
-  display: block;
+.videos__title {
+  font-size: 21px;
+  font-weight: 500;
+}
+@media (max-width: 576px) {
+  .videos__title {
+    text-align: center;
+  }
+}
+
+.card {
+  border-style: none;
+  border-radius: none;
+  margin-bottom: 20px;
+}
+
+.photos__img {
+  width: 100%;
+  height: 22vh;
+  border-radius: 0;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  padding: 0;
+  border-style: none;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 2px;
+}
+
+.card-text {
+  font-weight: lighter;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
