@@ -5,7 +5,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 6.25rem 3.125rem;
+        padding: 100px 50px;
+        @media (max-width: 576px) {
+        padding:50px 25px;
+             }
     }
 
     &__profile{
@@ -17,13 +20,16 @@
         border-bottom: 1px solid;
         border-color: $border-color;
         @media (max-width: 576px) {
-        border-bottom:0;
-         }
+            justify-content:center;
+            border-bottom: none;
+            }
     }
 
     &__info{
         display: flex;
         flex-grow:5;
+        @media (max-width: 576px) {
+        justify-content:center;
     }
 
     &__avatar{
