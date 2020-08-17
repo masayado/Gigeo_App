@@ -2,14 +2,16 @@
 
     &__banner{
         background-image: url('../images/image-banner.png');
+        height: 12.5rem;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 100px 50px;
+        background-origin: border-box;
         @media (max-width: 576px) {
-        padding:50px 25px;
-             }
-    }
+            height:110px;
+            }
+        }
+
 
     &__profile{
         display: flex;
@@ -17,9 +19,13 @@
         align-items: center;
         height: 80px;
         padding:0 100px;
+        margin-top: 6px;
+        margin-bottom:6px;
         border-bottom: 1px solid;
         border-color: $border-color;
         @media (max-width: 576px) {
+            display: flex;
+            align-items: center;
             justify-content:center;
             border-bottom: none;
             }
@@ -29,23 +35,26 @@
         display: flex;
         flex-grow:5;
         @media (max-width: 576px) {
-        justify-content:center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
     }
-
+    
     &__avatar{
         background-image: url('../images/profile-image.png');
         background-size: cover;
         height: 55px;
         width: 55px;
         border-radius: 50%;
-        position: relative;
-        top:12px;
+        justify-content: center;
+        align-items: center;
+
     }
 
     &__details{
         display:flex;
         flex-direction:column;
-        height: 80px;
         justify-content: center;
         align-items: flex-start;
         margin-left:25px;
@@ -63,10 +72,9 @@
 
     &__buttons{
         display:none;
-    @media (min-width: 576px) {
+        @media (min-width: 576px) {
         display:flex;
         justify-content:flex-end;
      }
     }
-
 }
