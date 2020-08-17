@@ -9938,13 +9938,12 @@ body {
   align-items: center;
   height: 80px;
   padding: 0 100px;
-  margin-top: 6px;
-  margin-bottom: 6px;
   border-bottom: 1px solid;
   border-color: #DCE0D8;
 }
 @media (max-width: 576px) {
   .header__profile {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
